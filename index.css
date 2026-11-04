@@ -46,3 +46,39 @@ p {
  .btn:hover {
     transform: scale(1.1);
   }
+
+ @media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
+    }
+
+    /* Перетворюємо горизонтальне меню на зручний вертикальний список */
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav__item a {
+        font-size: 1.1rem;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 0 10px; 
+    }
+
+    .main {
+        padding: 20px 15px; 
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+}

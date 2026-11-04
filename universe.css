@@ -73,12 +73,37 @@
 }
 
 @media (max-width: 768px) {
-    .container {
+    .header {
+        padding: 10px 0;
+    }
+
+    
+    .nav__list {
         flex-direction: column;
         align-items: center;
+        gap: 12px;
+    }
+
+    .nav__item a {
+        font-size: 1.1rem;
+        display: block;
+        padding: 5px 0;
+    }
+
+    .container {
+        margin: 15px auto;
+        padding: 0 10px; 
     }
 
     .main {
-        width: 100%;
+        padding: 20px 15px;
+    }
+
+    h2 {
+        font-size: 1.3rem; 
+    }
+
+    p {
+        font-size: 1rem;
     }
 }

@@ -177,12 +177,67 @@ h1 {
     margin: 20px;
 }
 
-@media (max-width: 500px) {
-    .quiz {
-        padding: 22px;
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 0;
     }
 
-    .question {
-        font-size: 18px;
+   
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .quiz {
+        padding: 15px 10px; 
+    }
+
+    #quizContent h1 {
+        font-size: 1.8rem;
+    }
+
+    
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-content {
+        padding: 20px 15px; 
+    }
+
+    .main-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .quiz-item {
+        padding: 15px 10px;
+    }
+
+    .quiz-item p {
+        font-size: 1rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+        padding: 12px 5px;
+    }
+
+    input[type="radio"] {
+        transform: scale(1.3);
+        margin-right: 8px;
+    }
+
+    
+    .btn {
+        max-width: 100%;
+        width: 100%;
+        padding: 16px;
+        font-size: 1.2rem;
+    }
+    
+    .sidebar {
+        width: 100%;
     }
 }
