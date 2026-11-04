@@ -1,0 +1,84 @@
+.body {
+  font-family: 'Comfortaa', sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/cosmos.jpe);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  height: 100%;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  width: 100%;
+  max-height: 100vh;
+  font-family: 'Comfortaa', sans-serif;
+}
+
+.nav__item a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav__item a:hover {
+  background-color: rgb(18, 16, 159);
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 25px auto;
+    gap: 25px;
+    padding: 0 15px;
+    flex: 1;
+}
+
+.main {
+    flex: 3;
+    background-color: rgba(37, 44, 63, 0.541);
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+}
+
+.img__fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        width: 100%;
+    }
+}

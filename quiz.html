@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вікторина</title>
+  <script src="script.js"></script>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body class="body">
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html">Головна</a></li>
+        <li class="nav__item"><a href="universe.html">Космос та Всесвіт</a></li>
+        <li class="nav__item"><a href="earth.html">Земля</a></li>
+        <li class="nav__item"><a href="exploration.html">Дослідження</a></li>
+        <li class="nav__item"><a href="interesting.html">Цікаве для роздуму</a></li>
+        <li class="nav__item"><a href="quiz.html">Вікторина</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+
+    <div class="quiz">
+
+        <div id="quizContent">
+            <h1>🌌 Космос і Всесвіт</h1>
+            <p class="subtitle">Перевір свої знання про космос!</p>
+
+            <div class="container">
+        
+        <main class="main-content">
+            <h2>5. Перевір свої знання</h2>
+            
+            <section class="quiz-section">
+                
+                <form id="quizForm">
+                    
+                    <div class="quiz-item">
+                        <p><strong>1. Що називають Всесвітом?</strong></p>
+                        
+                        <label><input type="radio" name="q1" value="wrong"> А) Лише Сонячну систему</label><br>
+                        <label><input type="radio" name="q1" value="correct"> Б) Космос, матерію, енергію, час і все існуюче</label><br>
+                        <label><input type="radio" name="q1" value="wrong"> В) Лише зорі та планети</label>
+                        <p class="feedback"></p> 
+                    </div>
+
+                    <div class="quiz-item">
+                        <p><strong>2. Скільки великих планет у Сонячній системі?</strong></p>
+                        <label><input type="radio" name="q2" value="wrong"> А) 7</label><br>
+                        <label><input type="radio" name="q2" value="correct"> Б) 8</label><br>
+                        <label><input type="radio" name="q2" value="wrong"> В) 10</label>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="quiz-item">
+                        <p><strong>3. Яка планета є найбільшою у Сонячній системі?</strong></p>
+                        <label><input type="radio" name="q3" value="wrong"> А) Земля</label><br>
+                        <label><input type="radio" name="q3" value="wrong"> Б) Сатурн</label><br>
+                        <label><input type="radio" name="q3" value="correct"> В) Юпітер</label>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="quiz-item">
+                        <p><strong>4. Чому на Землі змінюються день і ніч?</strong></p>
+                        <label><input type="radio" name="q4" value="correct"> А) Земля обертається навколо своєї осі</label><br>
+                        <label><input type="radio" name="q4" value="wrong"> Б) Земля рухається навколо Сонця</label><br>
+                        <label><input type="radio" name="q4" value="wrong"> В) Сонце обертається навколо Землі</label>
+                        <p class="feedback"></p>
+                    </div>
+
+                    <div class="quiz-item">
+                        <p><strong>5. Який супутник є природним супутником Землі?</strong></p>
+                        <label><input type="radio" name="q5" value="wrong"> А) Європа</label><br>
+                        <label><input type="radio" name="q5" value="correct"> Б) Місяць</label><br>
+                        <label><input type="radio" name="q5" value="wrong"> В) Енцелад</label>
+                        <p class="feedback"></p>
+                    </div>
+
+                    
+                    <button type="button" class="btn" onclick="checkQuiz()">Перевірити тест</button>
+                    
+                    <h3 id="quizResult" style="margin-top: 20px;"></h3>
+                </form>
+            </section>
+
+            <section class="summary-box">
+                <h3>Висновок проєкту</h3>
+                <p>Вивчення Космосу та Всесвіту допомагає краще зрозуміти закони природи, рух небесних тіл та оцінити унікальність нашої Землі. Космос залишається одним із найбільших об'єктів для майбутніх досліджень людства.</p>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-block">
+                <h3>Факти: Тіла та Явища</h3>
+                <ul>
+                    <li>Під час місячного затемнення Місяць не зникає, а стає темно-червоним через заломлення променів («Кривавий Місяць»).</li>
+                    <li>Хвіст комети завжди спрямований у протилежний від Сонця бік, бо його видуває сонячний вітер.</li>
+                    <li>Зорі в одному сузір'ї здаються розташованими поруч лише з Землі, у тривимірному просторі між ними колосальні відстані.</li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+
+        <div class="result" id="result">
+            <h2>✨ Вікторину завершено!</h2>
+            <p>Твій результат:</p>
+
+            <div class="score" id="score"></div>
+            <p id="resultText"></p>
+
+            <button class="restart-btn" id="restartBtn">
+                Пройти ще раз
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
